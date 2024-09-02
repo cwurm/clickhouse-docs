@@ -45,7 +45,7 @@ Admin users are assigned the `sql_console_admin` role by default, so nothing cha
 
 This access control functionality can also be configured manually for user-level granularity. Before assigning the new `sql_console_*` roles to users, SQL console user-specific database roles matching the namespace `sql-console-role:<email>` should be created. For example: 
 
-```sql
+[```sql
 CREATE ROLE OR REPLACE sql_console_role_<email>;
 GRANT <some grants> TO sql_console_role_<email>;
 ```
@@ -63,6 +63,6 @@ CREATE ROLE OR REPLACE `sql_console_role_zach@clickhouse.com`;
 GRANT sql_console_sa_role to `sql_console_role_christoph@clickhouse.com`;
 GRANT sql_console_sa_role to `sql_console_role_jake@clickhouse.com`;
 GRANT sql_console_pm_role to `sql_console_role_zach@clickhouse.com`;
-```
+```](https://github.com/ClickHouse/clickhouse-docs/edit/main/docs/en/cloud/security/common-access-management-queries.md)
 
 <CommonUserRolesContent />
